@@ -1,14 +1,13 @@
-// break and continue statements in for loops
-for(let i=0;i<10;i+=1){
-    if(i===5){
-      continue
-    }
-    console.log(i)
-}
-// break statement
-for(let i=0; i<10; i +=1){
- if(i===5){
-  break;
- }
- console.log(i)
+
+//execute objects in for loop 
+
+const info={
+  course:"Advance javascript course",
+  description:"Everything about javascript",
+  duration:"3 months",
+  topics:['es6' ,'async js',"dom","oop","functional programming"]
+};
+
+for(let i=0;i<info.topics.length; i+=1){
+  console.log(info.topics[i])
 }
