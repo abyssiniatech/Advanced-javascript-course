@@ -1,13 +1,17 @@
+const ageCalculator={
+    calculateAge : function(birthYear){
+      const currentYear = new Date().getFullYear();
+      return currentYear - birthYear
+    },
+    displayAge:function (birthYear){
+       const age = this.calculateAge(birthYear);
+       console.log(`i am ${age} years old`)
 
-//execute objects in for loop 
+    }
 
-const info={
-  course:"Advance javascript course",
-  description:"Everything about javascript",
-  duration:"3 months",
-  topics:['es6' ,'async js',"dom","oop","functional programming"]
-};
 
-for(let i=0;i<info.topics.length; i+=1){
-  console.log(info.topics[i])
 }
+
+ageCalculator.displayAge(1992);
+
+
