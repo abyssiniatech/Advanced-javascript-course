@@ -1,15 +1,23 @@
-let numbers=[1,2,3,4,5,6,7];
-var sum=0;
-// calculate the sum of all numbers in the array
-for(let i=0; i<numbers.length;i+=1){
-  sum +=numbers[i];
-  console.log(`The sum of the numbers is  =   ${sum}`)
+// map() array of numbers to their squares
+const numbers=[1,2,3,4,5,6];
+numbers.map(num=>console.log(num*num));
+
+// the second exa,ple is to map of an array of objects to their names
+const people={
+   person1: {name: "surafel",age:24},
+   person2: {name: "Abel",age:34},
+   person3: {name: "aster",age:14}
 }
 
 
-// calculate the sum of the nunbers in the array using foreach method
-numbers.forEach(num=>{
-  sum +=num;
- 
-})
- console.log(`The sum of the numbers using the given  method is = ${sum}`)
+console.log(Object.keys(people).map(key =>people.person1));
+
+// the third example is to map an array of objects to their names
+const peopleArray =[
+   {name:"surafel", age:24},
+   {name:"yarde", age:34},
+   {name:"nahom", age:14},
+
+]
+
+console.log(peopleArray.map(person =>` my name is ${person.name} and  i'm ${person.age} years old`));
