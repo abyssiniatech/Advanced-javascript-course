@@ -1,35 +1,16 @@
-// dom manipulation tutorials
-// there are four ways selecting elements in the dom 
-// 1. getElementById();
-// 2. getElementByTagName();
-// 3. getElementsByClassname();
-// 4. querySelector();
-// 5. querySelectorAll();
+// three text insertion method  inside the  html
+
+// 1 textContent;
+// 2.innerText;
+// 3.innerHTML;
+
+const head1 = document.getElementById('head1');
+let textContent=head1.textContent = 'chnged text by textContent'
+let innerHtml=head1.innerHTML = 'chnged text by innerHtml '
+let innerText=head1.innerText = 'chnged text by innerText'
 
 
-
-// example 1 GetElementByTagName();
-const h1= document.getElementsByTagName('h1');
-console.log(h1)
-
-// example 2 getElementById()
-const head1= document.getElementById('head1');
-console.log(head1);
-
-
-
-// example 3. getElementsByClassName()
-const para= document.getElementsByClassName('para');
-console.log(para)
-
-
-
-// example 4  querySelector();
-const para1=document.querySelector('.para');
-
-
-
-
-// example 5 querySelectorAll();
-const list =document.querySelectorAll('li');
-console.log(list)
+// execute the function
+console.log(textContent);
+console.log(innerHtml);
+console.log(innerText)
